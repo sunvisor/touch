@@ -12,7 +12,8 @@ class users extends xFrameworkPX_Model
 
     private $_fields = array(
         'name',
-        'email'
+        'email',
+        'bio'
     );
 
     /**

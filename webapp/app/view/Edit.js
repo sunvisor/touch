@@ -14,7 +14,9 @@ Ext.define('AM.view.Edit', {
         items: [
             {
                 xtype: 'fieldset',
-                title: 'Personal Info',
+                defaults: [
+                    { lebelWidth: '5%' }
+                ],
                 items: [
                     {
                         xtype: 'textfield',
@@ -24,18 +26,22 @@ Ext.define('AM.view.Edit', {
                         xtype: 'textfield',
                         name: 'email',
                         label: 'メール'
+                    },{
+                        xtype: 'textareafield',
+                        maxRows: 10,
+                        name: 'bio',
+                        label: '略歴'
                     }
                 ]
             }
             ,{
-                xtype: 'panel',
+                xtype: 'toolbar',
+                ui: 'neutral',
+                docked: 'bottom',
                 defaults: {
                     xtype: 'button',
                     style: 'margein: 4px',
                     flex: 1
-                },
-                layout: {
-                    type: 'hbox'
                 },
                 items:[
                     {

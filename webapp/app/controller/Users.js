@@ -23,7 +23,7 @@ Ext.define('AM.controller.Users', {
             addButton: 'userlist #addButton'
         },
         control: {
-            userList: {
+            'userlist' : {
                 disclose: 'onDisclosure'
             },
             addButton: {
